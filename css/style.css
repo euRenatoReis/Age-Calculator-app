@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 86%);
+    padding: 50px;
+    gap: 20px;
+    flex-direction: column;
+    font-family: 'Poppins-Bold';
+}
+
+
+h1 {
+
+    font-weight: 800;
+
+}
+
+input {
+
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+}
+
+p {
+
+    font-weight: 400;
+    color: hsl(0, 1%, 44%);
+}
+
+
+input {
+
+    display: flex;
+    font-size: 32px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+
+section {
+
+
+    display: flex;
+    height: 500px;
+    width: 700px;
+    border-bottom-right-radius: 50px;
+    padding: 50px;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+
+}
+
+section div:nth-child(0) {
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+section div:nth-child(1) {
+
+    display: flex;
+    flex-direction: row;
+}
+
+section div:nth-child(2) {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.input-year,
+.input-month,
+.input-day {
+
+    display: flex;
+    border: none;
+    outline: 2px solid hsl(0, 1%, 44%);
+    padding: 10px;
+    height: 50px;
+    width: 120px;
+    cursor: grab;
+}
+
+
+.input-day:focus,
+.input-month:focus,
+.input-year:focus {
+
+    outline: 2px solid hsl(259, 100%, 65%);
+    caret-color: hsl(259, 100%, 65%);
+}
+
+
+.input-year.negative,
+.input-month.negative,
+.input-day.negative {
+
+    outline: 2px solid hsl(0, 100%, 67%);
+    caret-color: hsl(0, 100%, 67%);
+
+}
+
+.title.negative {
+
+    color: hsl(0, 100%, 67%)
+}
+
+.aviso-day,
+.aviso-month,
+.aviso-year {
+
+    display: none;
+}
+
+.aviso-day.ativo,
+.aviso-month.ativo,
+.aviso-year.ativo {
+
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+    display: flex;
+    height: 10px;
+}
+
+
+ul {
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+
+.result-data ul:nth-child(1) {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.result-data ul li {
+
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    padding-left: 60px;
+    gap: 10px;
+}
+
+
+ul li {
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.year-number,
+.month-number,
+.day-number {
+
+    color: hsl(259, 100%, 65%);
+}
+
+.page-wall {
+
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+.button-tree {
+
+    background-image: url(../images/icon-arrow.svg);
+    background-color: hsl(259, 100%, 65%);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    cursor: grab;
+    width: 80px;
+    height: 80px;
+}
+
+.button-tree:hover {
+
+    cursor: cell;
+    background-color: hsl(0, 0%, 8%);
+
+}
+
+hr {
+
+    display: flex;
+    border: 1px solid;
+    transform: rotate(90deg)
+    
+}
+
+
+@media (max-width: 375px) {
+
+    section {
+
+        height: 500px;
+        width: 340px;
+        padding: 10px;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+
+    .page-wall {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+    .button-tree {
+
+        display: flex;
+        justify-self: center;
+        width: 40px;
+        height: 40px;
+        background-color: hsl(259, 100%, 65%);
+    }
+
+    .input-day,
+    .input-month,
+    .input-year {
+
+        height: 30px;
+        width: 80px;
+    }
+
+    .section div {
+
+        display: flex;
+        width: 300px;
+        justify-content: center;
+        
+
+    }
+
+    .result-data{
+
+        display: flex;
+        width: 300px;
+       
+    }
+
+    .result-data ul {
+
+        display: flex;
+        max-width: 280px;
+        justify-content: center;
+    }
+
+    .result-data ul li {
+
+        display: flex;
+        max-width: 275px;
+          
+    }
+
+    .year-number,
+    .month-number,
+    .day-number {
+
+        height: 30px;
+        width: 80px;
+    }
+
+    .aviso-day,
+    .aviso-month,
+    .aviso-year {
+
+        font-size: 10px;
+    }
+
+    hr{
+
+        display: flex;
+
+    }
+
+}
